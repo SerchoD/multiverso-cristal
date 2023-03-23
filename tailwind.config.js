@@ -3,6 +3,12 @@ module.exports = {
 	content: ['./src/**/*.{html,js}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'background-1': "url('../src/assets/backgrounds/madera-cristal-chica.jpg')",
+				'background-2': "url('../src/assets/backgrounds/piedras-colores-cerca.jpg')",
+				'background-3': "url('../src/assets/backgrounds/piedras-colores-lejos.jpg')",
+				'img-1': "url('../src/assets/images/teatro-1.jpg')",
+			},
 			screens: {
 				// Styles are DESKTOP FIRST
 				// Use 'isMobile:[your-style] to define Mobile effect only.'

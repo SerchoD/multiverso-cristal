@@ -3,7 +3,11 @@
 const useStyles = () => {
 	// const { isMobile } = useViewport();
 	const styles = {
-		main_container: `absolute top-0 flex justify-center items-center w-screen h-16 bg-color-5/70`,
+		main_container: `z-50 absolute top-0 h-14 w-screen
+    flex justify-center items-center   
+    | bg-gradient-to-r from-color-4/50 to-color-1/80 |
+    shadow-[0_0px_10px_10px_rgba(0,0,0,.3)]`,
+
 		element_container: 'cursor-pointer',
 	};
 
