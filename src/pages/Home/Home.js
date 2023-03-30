@@ -6,34 +6,34 @@ import useStyles from './useStyles';
 
 const ELEMENTS = [
 	{
-		title: 'Teatro Holístico',
+		title: 'Título título',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
 		image: 'bg-img-1',
 	},
 	{
-		title: 'Geomancia',
+		title: 'Título título',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: "'../src/assets/images/teatro-1.jpg'",
+		image: 'bg-img-1',
 	},
 	{
-		title: 'Registros Akáshicos',
+		title: 'Título título',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: "'../src/assets/images/teatro-1.jpg'",
+		image: 'bg-img-1',
 	},
 	{
-		title: 'Taller de KKCK',
+		title: 'Título título',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: "'../src/assets/images/teatro-1.jpg'",
+		image: 'bg-img-1',
 	},
 	{
-		title: 'Taller de Mate',
+		title: 'Título título',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: "'../src/assets/images/teatro-1.jpg'",
+		image: 'bg-img-1',
 	},
 ];
 
