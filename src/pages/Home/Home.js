@@ -1,5 +1,6 @@
 import React from 'react';
 import FullBackGround from '../../components/FullBackGround/FullBackGround';
+import HomeCards from '../../components/HomeCards/HomeCards';
 import Topbar from '../../components/Topbar/Topbar';
 import useStyles from './useStyles';
 
@@ -38,36 +39,20 @@ const ELEMENTS = [
 
 const Home = () => {
 	const s = useStyles();
+
 	return (
 		<div className={s.main_container}>
 			<Topbar />
 			<FullBackGround />
 			<div className={s.elements_container}>
-				{ELEMENTS.map((element, index) => {
-					console.log(element.image);
+				{ELEMENTS.map((cardData, index) => {
 					return (
-						<div
+						<HomeCards
 							key={index}
-							className={`
-						  	${s.card_container}
-								${index === 0 && 'mt-24'}
-								${index === ELEMENTS.length - 1 && 'mb-24'}
-							`}
-							style={{
-								clipPath: 'polygon(3% 0, 100% 0%, 100% 100%, 0% 100%)',
-							}}
-						>
-							<div
-								className={` h-full w-44 ${element?.image} bg-cover`}
-								style={{
-									clipPath: 'polygon(10% 0, 100% 0%, 88% 100%, 0% 100%)',
-								}}
-							></div>
-							<div>
-								{/* TODO TEXTOSSSSSSSSSSSSSS */}
-								<p className='text-red-900'>asdasd</p>
-							</div>
-						</div>
+							cardData={cardData}
+							index={index}
+							length={ELEMENTS.length - 1}
+						/>
 					);
 				})}
 			</div>
