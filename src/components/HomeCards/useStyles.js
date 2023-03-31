@@ -1,4 +1,4 @@
-const useStyles = ({ bg_img: card_img, index, length }) => {
+const useStyles = ({ card_img, index, length }) => {
 	const styles = {
 		card_container: `shrink-0 flex flex-row w-[75%] h-[180px] mt-10 cursor-pointer 
 			${index === 0 && 'mt-24'} 
