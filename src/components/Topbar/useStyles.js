@@ -1,10 +1,4 @@
-// import useViewport from '../../hooks/useViewport';
-
-// Gradiente test 1
-// | bg-gradient-to-r from-color-4/50 to-color-1/80 |
-
 const useStyles = () => {
-	// const { isMobile } = useViewport();
 	const styles = {
 		main_container: `z-50 absolute top-0 h-14 w-screen
     		flex justify-center items-center   
