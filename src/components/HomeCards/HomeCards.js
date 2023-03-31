@@ -14,20 +14,9 @@ const HomeCards = ({ cardData, index, length }) => {
 	};
 
 	return (
-		<div
-			key={index}
-			className={s.card_container}
-			style={{
-				clipPath: 'polygon(2% 0, 100% 0%, 98% 100%, 0% 100%)',
-			}}
-		>
-			<div
-				name='img'
-				className={s.img_container}
-				style={{
-					clipPath: 'polygon(10% 0, 100% 0%, 90% 100%, 0% 100%)',
-				}}
-			></div>
+		<div key={index} className={s.card_container}>
+			<div name='img' className={s.img_container}></div>
+
 			<div name='text' className={s.text_container}>
 				<Text className={s.card_title} text={cardData?.title} textType='title_1' />
 
