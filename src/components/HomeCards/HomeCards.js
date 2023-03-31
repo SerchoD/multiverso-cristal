@@ -3,7 +3,7 @@ import Text from '../Text/Text';
 import useStyles from './useStyles';
 
 const HomeCards = ({ cardData, index, length }) => {
-	const s = useStyles({ bg_img: cardData?.image, index, length });
+	const s = useStyles({ card_img: cardData?.image, index, length });
 
 	const descriptionRef = useRef(null);
 

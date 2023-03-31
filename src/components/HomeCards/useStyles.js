@@ -1,4 +1,4 @@
-const useStyles = ({ bg_img, index, length }) => {
+const useStyles = ({ bg_img: card_img, index, length }) => {
 	const styles = {
 		card_container: `shrink-0 flex flex-row w-[75%] h-[180px] mt-10 cursor-pointer 
 			${index === 0 && 'mt-24'} 
@@ -12,7 +12,7 @@ const useStyles = ({ bg_img, index, length }) => {
 			rounded-none hover:rounded-xl
 			ease-linear duration-200
 			`,
-		img_container: `h-auto min-w-[260px] w-[25%] ${bg_img} bg-cover relative -left-2 `,
+		img_container: `h-auto min-w-[260px] w-[25%] ${card_img} bg-cover relative -left-2 `,
 
 		text_container: 'flex flex-col items-center justify-start h-full w-[70%]  ',
 		card_title: 'text-center mt-1',
