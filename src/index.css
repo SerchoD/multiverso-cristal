@@ -66,6 +66,9 @@ code {
 	.text-shadow-4 {
 		text-shadow: 4px 4px 5px rgba(0, 0, 0, 1);
 	}
+	.text-shadow-5 {
+		text-shadow: 10px 15px 10px rgba(0, 0, 0, 1);
+	}
 
 	.box-shadow-1 {
 		box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -75,5 +78,39 @@ code {
 	}
 	.box-shadow-3 {
 		box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.7);
+	}
+
+	.animation-right-to-left {
+		position: relative;
+		animation-name: right-to-left;
+		animation-duration: 20s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in-out;
+	}
+
+	@keyframes right-to-left {
+		from {
+			left: 20px;
+		}
+		to {
+			left: -20px;
+		}
+	}
+
+	.animation-left-to-right {
+		position: relative;
+		animation-name: left-to-right;
+		animation-duration: 20s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in-out;
+	}
+
+	@keyframes left-to-right {
+		from {
+			right: 20px;
+		}
+		to {
+			right: -30px;
+		}
 	}
 }

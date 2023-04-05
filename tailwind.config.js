@@ -17,6 +17,8 @@ module.exports = {
 				// Styles are DESKTOP FIRST
 				// Use 'isMobile:[your-style] to define Mobile effect only.'
 				isMobile: { max: '720px' },
+				// Use 'isDesktop:[your-style] to define Desktop effect, that ignores when it's Mobile.'
+				isDesktop: { min: '721px' },
 			},
 			colors: {
 				color: {

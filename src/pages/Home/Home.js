@@ -46,9 +46,13 @@ const Home = () => {
 			{/* <Topbar /> */}
 			<FullBackGround />
 			<div className={s.elements_container}>
-				{/* <div className='flex justify-center items-center border-[1px] border-blue-400/[50%] w-[500px] h-[500px] mt-[100px]'>
+				<div
+					className='
+						flex justify-center items-center border-[1px] border-blue-400/[50%]
+				  	w-[300px] h-[300px] mt-[100px]'
+				>
 					Logo
-				</div> */}
+				</div>
 				{shuffleArray(ELEMENTS).map((cardData, index) => {
 					return (
 						<HomeCards
