@@ -12,6 +12,7 @@ const OpeningSplash = () => {
 	);
 	const [showOpeningSplash, setShowOpeningSplash] = useState(true);
 	const [showText, setShowText] = useState(false);
+	const [showTextCanceled, setShowTextCanceled] = useState(true);
 	const [hideBackGround, setHideBackGround] = useState(false);
 
 	const s = useStyles({ showText, hideBackGround });
@@ -37,6 +38,7 @@ const OpeningSplash = () => {
 		clearTimeout(timerFinishComponent);
 		setHideBackGround(true);
 		setShowText(false);
+		setShowTextCanceled(false);
 		setTimeout(() => {
 			setShowOpeningSplash(false);
 		}, 2000);
@@ -93,35 +95,34 @@ const OpeningSplash = () => {
 		<>
 			{showOpeningSplash && (
 				<div className={s.main_container} onClick={handleClickAnyWhere}>
-					<div
-						className={` ${s.fadeInAndOut_animation} absolute top-[90%] left-[50%] isMobile:left-[38%] w-fit h-fit`}
-					>
+					<div className={` ${s.fadeInAndOut_animation} ${s.loader_container}`}>
 						<Loader />
 					</div>
-
-					<div className={s.text_container}>
-						<div className={s.sentence_container}>
-							<Text
-								className={`${s.sentence_text} ${s.fadeInAndOut_animation}`}
-								text={sentenceToShow?.sentence}
-							/>
-							<div className={s.author_container}>
-								{sentenceToShow?.author.map((e, i) => {
-									return (
-										<Text
-											key={i}
-											className={`${i === 0 && 'mt-5'} ${i !== 0 && 'relative -top-3'} 
+					{showTextCanceled && (
+						<div className={s.text_container}>
+							<div className={s.sentence_container}>
+								<Text
+									className={`${s.sentence_text} ${s.fadeInAndOut_animation}`}
+									text={sentenceToShow?.sentence}
+								/>
+								<div className={s.author_container}>
+									{sentenceToShow?.author.map((e, i) => {
+										return (
+											<Text
+												key={i}
+												className={`${i === 0 && 'mt-5'} ${i !== 0 && 'relative -top-3'} 
 												${s.author_text}
 												${s.fadeInAndOut_animation} 
 											`}
-											text={e}
-											textType={'text_1'}
-										/>
-									);
-								})}
+												text={e}
+												textType={'text_1'}
+											/>
+										);
+									})}
+								</div>
 							</div>
 						</div>
-					</div>
+					)}
 				</div>
 			)}
 		</>

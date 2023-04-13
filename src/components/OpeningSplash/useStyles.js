@@ -4,6 +4,8 @@ const useStyles = ({ showText, hideBackGround }) => {
 			transition-all ease-in-out duration-[1500ms] ${
 			hideBackGround ? 'bg-neutral-900/[0%]' : 'bg-neutral-900/[100%]'
 		}`,
+		loader_container:
+			'absolute top-[90%] left-[50%] isMobile:left-[calc(50%-50px)] w-fit h-fit',
 		text_container:
 			' border-white/[10%] flex flex-col justify-center items-center w-[100%]',
 

@@ -5,7 +5,7 @@
 	background-color: #fff;
 	box-shadow: 32px 0 #fff, -32px 0 #fff;
 	position: relative;
-	animation: flash 4s ease-out infinite alternate;
+	animation: flash 2s ease-out infinite alternate;
 	opacity: 50%;
 }
 
