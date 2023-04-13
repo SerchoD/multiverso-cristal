@@ -53,7 +53,7 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerStartText);
 		};
-	}, []);
+	}, [timerStartText]);
 
 	useEffect(() => {
 		setTimerFinishText(
@@ -65,7 +65,7 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerFinishText);
 		};
-	}, []);
+	}, [timerFinishText, readingTime]);
 
 	useEffect(() => {
 		setTimerShowBg(
@@ -77,7 +77,7 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerShowBg);
 		};
-	}, []);
+	}, [timerShowBg, readingTime]);
 
 	useEffect(() => {
 		setTimerFinishComponent(
@@ -89,7 +89,7 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerFinishComponent);
 		};
-	}, []);
+	}, [timerFinishComponent, readingTime]);
 
 	return (
 		<>
