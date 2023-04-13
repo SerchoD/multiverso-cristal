@@ -53,7 +53,8 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerStartText);
 		};
-	}, [timerStartText]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	useEffect(() => {
 		setTimerFinishText(
@@ -65,7 +66,8 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerFinishText);
 		};
-	}, [timerFinishText, readingTime]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	useEffect(() => {
 		setTimerShowBg(
@@ -77,7 +79,8 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerShowBg);
 		};
-	}, [timerShowBg, readingTime]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	useEffect(() => {
 		setTimerFinishComponent(
@@ -89,7 +92,8 @@ const OpeningSplash = () => {
 		return () => {
 			clearTimeout(timerFinishComponent);
 		};
-	}, [timerFinishComponent, readingTime]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	return (
 		<>

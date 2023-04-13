@@ -14,15 +14,15 @@ const useStyles = ({ card_img, index, length }) => {
 				ease-linear duration-200
 			`,
 		img_container: `
-			h-auto isMobile:h-[100px] isDesktop:min-w-[260px] w-[25%] ${card_img} bg-cover isMobile:bg-[100%] relative
-			isMobile:w-[100%] 
-		`,
+				h-auto isMobile:h-[100px] isDesktop:min-w-[260px] w-[25%] ${card_img} bg-cover isMobile:bg-[100%] relative
+				isMobile:w-[100%] 
+			`,
 
 		text_container:
 			'flex flex-col items-center justify-start h-full w-[70%] isMobile:w-full',
 		card_title: 'text-center mt-1 px-2 pb-1 whitespace-nowrap isMobile:mt-3',
 		description_container: 'w-[90%] h-[65%] overflow-y-auto px-5 isMobile:hidden',
-		card_description: ' text-center pb-2',
+		card_description: 'text-center pb-2',
 	};
 	return styles;
 };
