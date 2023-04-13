@@ -93,14 +93,16 @@ const OpeningSplash = () => {
 		<>
 			{showOpeningSplash && (
 				<div className={s.main_container} onClick={handleClickAnyWhere}>
-					<div className='absolute top-50 left-[50px] w-fit h-fit'>
+					<div
+						className={` ${s.fadeInAndOut_animation} absolute top-[90%] left-[50%] isMobile:left-[38%] w-fit h-fit`}
+					>
 						<Loader />
 					</div>
 
 					<div className={s.text_container}>
 						<div className={s.sentence_container}>
 							<Text
-								className={`${s.sentence_text} ${s.text_animation}`}
+								className={`${s.sentence_text} ${s.fadeInAndOut_animation}`}
 								text={sentenceToShow?.sentence}
 							/>
 							<div className={s.author_container}>
@@ -110,7 +112,7 @@ const OpeningSplash = () => {
 											key={i}
 											className={`${i === 0 && 'mt-5'} ${i !== 0 && 'relative -top-3'} 
 												${s.author_text}
-												${s.text_animation} 
+												${s.fadeInAndOut_animation} 
 											`}
 											text={e}
 											textType={'text_1'}

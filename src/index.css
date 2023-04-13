@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+	font-family: 'flamenco';
+	src: url('./assets/fonts/Flamenco-Regular.ttf');
+}
 
 * {
 	overflow: hidden;

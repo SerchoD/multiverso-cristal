@@ -2,6 +2,7 @@ import React from 'react';
 import HomeCards from '../../components/HomeCards/HomeCards';
 import { shuffleArray } from '../../utils/utils';
 import PageContainer from '../../components/PageContainer/PageContainer';
+import useStyles from './useStyles';
 
 const ELEMENTS = [
 	{
@@ -73,14 +74,12 @@ const ELEMENTS = [
 // ];
 
 const Home = () => {
+	const s = useStyles();
 	return (
 		<PageContainer>
-			<div
-				className='
-						flex justify-center items-center border-[1px] border-blue-400/[50%]
-				  	w-[300px] h-[300px] mt-[100px]'
-			>
-				Logo
+			<div className={s.title_container}>
+				<h1>Multiverso</h1>
+				<h1>Cristal</h1>
 			</div>
 			{shuffleArray(ELEMENTS).map((cardData, index) => {
 				return (

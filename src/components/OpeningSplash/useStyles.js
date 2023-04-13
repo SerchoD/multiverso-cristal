@@ -14,7 +14,7 @@ const useStyles = ({ showText, hideBackGround }) => {
 		author_container: 'border-white/[10%] animation-left-to-right',
 		author_text: 'text-shadow-5 text-right pr-10 pb-4 italic',
 
-		text_animation: `transition-opacity ease-linear duration-[1000ms] ${
+		fadeInAndOut_animation: `transition-opacity ease-linear duration-[1000ms] ${
 			showText ? 'opacity-100' : 'opacity-0'
 		} `,
 	};

@@ -3,6 +3,9 @@ module.exports = {
 	content: ['./src/**/*.{html,js}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				flamenco: ['flamenco'],
+			},
 			backgroundImage: {
 				'background-1': "url('../src/assets/backgrounds/madera-cristal-chica.jpg')",
 				'background-2': "url('../src/assets/backgrounds/piedras-colores-cerca.jpg')",
