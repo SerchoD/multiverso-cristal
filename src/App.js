@@ -1,14 +1,12 @@
-import OpeningSplash from './components/OpeningSplash/OpeningSplash';
-import Home from './pages/Home/Home';
 import './App.css';
+import RouterApp from './Router/RouterApp';
 
-function App() {
+const App = () => {
 	return (
 		<div className='App'>
-			<OpeningSplash />
-			<Home />
+			<RouterApp />
 		</div>
 	);
-}
+};
 
 export default App;

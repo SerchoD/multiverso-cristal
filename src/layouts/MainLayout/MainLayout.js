@@ -1,7 +1,13 @@
-import React from 'react';
+import { Outlet } from 'react-router';
+import OpeningSplash from '../../components/OpeningSplash/OpeningSplash';
 
-const MainLayout = ({ children }) => {
-	return <>{children}</>;
+const MainLayout = () => {
+	return (
+		<div>
+			<OpeningSplash />
+			<Outlet />
+		</div>
+	);
 };
 
 export default MainLayout;

@@ -15,7 +15,7 @@ const useStyles = ({ card_img, index, length }) => {
 		img_container: `h-auto min-w-[260px] w-[25%] ${card_img} bg-cover relative -left-2 `,
 
 		text_container: 'flex flex-col items-center justify-start h-full w-[70%]  ',
-		card_title: 'text-center mt-1',
+		card_title: 'text-center mt-1 px-2 pb-1',
 		description_container: 'w-[90%] h-[65%] overflow-y-auto px-5',
 		card_description: ' text-center pb-2',
 	};

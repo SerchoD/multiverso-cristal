@@ -55,4 +55,14 @@ export const openingSentence = [
 		sentence: '"...y conoceréis la verdad, y la verdad os hará libres."',
 		author: ['Juan 8:32'],
 	},
+	{
+		sentence:
+			'"He aprendido a no intentar convencer a nadie. El trabajo de convencer es una falta de respeto, es un intento de someter al otro."',
+		author: ['José Saramago'],
+	},
+	{
+		sentence:
+			'"Cuando hagas algo noble y hermoso, y nadie se de cuenta, no estés triste. El amanecer es un espectáculo hermoso y sin embargo la mayor parte de la audiencia duerme todavía."',
+		author: ['John Lennon'],
+	},
 ];
