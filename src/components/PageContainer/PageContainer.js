@@ -1,15 +1,21 @@
 import React from 'react';
 import useStyles from './useStyles';
 import FullBackGround from '../FullBackGround/FullBackGround';
+import { motion } from 'framer-motion';
 
 const PageContainer = ({ children }) => {
 	const s = useStyles();
 
 	return (
-		<div className={s.main_container}>
+		<motion.div
+			className={s.main_container}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1, transition: { duration: 2 } }}
+			exit={{ opacity: 0 }}
+		>
 			<FullBackGround />
 			<div className={s.elements_container}>{children}</div>
-		</div>
+		</motion.div>
 	);
 };
 
