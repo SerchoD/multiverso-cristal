@@ -119,7 +119,7 @@ const OpeningSplash = () => {
 												${s.fadeInAndOut_animation} 
 											`}
 												text={e}
-												textType={'text_1'}
+												textType={2}
 											/>
 										);
 									})}
