@@ -1,6 +1,6 @@
 import { PATHS } from '../../constants/paths';
 
-export const ELEMENTS = [
+export const CARD_DATA = [
 	{
 		title: 'Teatro Holístico',
 		description:
@@ -19,6 +19,7 @@ export const ELEMENTS = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
 		image: 'bg-img-3',
+		route: PATHS.ASTRAL_SURGERY,
 	},
 	{
 		title: 'Registros Akáshicos',

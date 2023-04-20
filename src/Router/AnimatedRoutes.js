@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home';
 import GemstoneTherapy from '../pages/GemstoneTherapy/GemstoneTherapy';
 
 import { AnimatePresence } from 'framer-motion';
+import AstralSurgery from '../pages/AstralSurgery/AstralSurgery';
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -14,6 +15,7 @@ const AnimatedRoutes = () => {
 				<Route path={PATHS.BASE_URL} element={<MainLayout />}>
 					<Route index element={<Home />} />
 					<Route path={PATHS.GEMSTONE_THERAPY} element={<GemstoneTherapy />} />
+					<Route path={PATHS.ASTRAL_SURGERY} element={<AstralSurgery />} />
 				</Route>
 
 				<Route path='*' element={<Navigate to={PATHS.BASE_URL} />} />

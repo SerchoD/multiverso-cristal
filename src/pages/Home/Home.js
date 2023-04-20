@@ -4,14 +4,18 @@ import HomeCards from '../../components/HomeCards/HomeCards';
 import { shuffleArray } from '../../utils/utils';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import useStyles from './useStyles';
-import { ELEMENTS } from './homeCardsData';
+import { CARD_DATA } from './homeCardsData';
+
+const ELEMENTS = shuffleArray(CARD_DATA);
 
 const Home = () => {
 	const s = useStyles();
 	const navigate = useNavigate();
 
 	const handleCardClick = ({ route }) => {
-		navigate(route);
+		if (route) {
+			navigate(route);
+		}
 	};
 
 	return (
@@ -20,7 +24,7 @@ const Home = () => {
 				<h1>Multiverso</h1>
 				<h1>Cristal</h1>
 			</div>
-			{shuffleArray(ELEMENTS).map((cardData, index) => {
+			{ELEMENTS.map((cardData, index) => {
 				return (
 					<HomeCards
 						onClick={() => handleCardClick({ route: cardData.route })}
