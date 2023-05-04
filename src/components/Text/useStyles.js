@@ -1,8 +1,9 @@
 const useStyles = () => {
 	const styles = {
-		title_1: 'text-[30px]',
-		text_1: 'text-[20px]',
-		text_2: 'text-[15px]',
+		1: 'text-[30px] isMobile:text-[1.5rem]',
+		2: 'text-[20px]',
+		3: 'text-[15px]',
+		4: 'text-[18px] leading-5',
 	};
 	return styles;
 };

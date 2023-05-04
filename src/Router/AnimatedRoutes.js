@@ -14,6 +14,7 @@ const AnimatedRoutes = () => {
 			<Routes location={location} key={location.pathname}>
 				<Route path={PATHS.BASE_URL} element={<MainLayout />}>
 					<Route index element={<Home />} />
+
 					<Route path={PATHS.GEMSTONE_THERAPY} element={<GemstoneTherapy />} />
 					<Route path={PATHS.ASTRAL_SURGERY} element={<AstralSurgery />} />
 				</Route>

@@ -18,7 +18,7 @@ const HomeCards = ({ cardData, index, length, onClick }) => {
 			<div name='img' className={s.img_container}></div>
 
 			<div name='text' className={s.text_container}>
-				<Text className={s.card_title} text={cardData?.title} textType='title_1' />
+				<Text className={s.card_title} text={cardData?.title} textType={1} />
 
 				<div
 					ref={descriptionRef}
@@ -28,7 +28,7 @@ const HomeCards = ({ cardData, index, length, onClick }) => {
 					<Text
 						className={s.card_description}
 						text={cardData?.description}
-						textType='text_1'
+						textType={2}
 					/>
 				</div>
 			</div>
