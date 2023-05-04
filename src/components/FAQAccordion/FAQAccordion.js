@@ -36,6 +36,7 @@ const FaQAccordion = ({ FAQ, className }) => {
 		if (showAccordion && contentHeight !== 'auto') {
 			setShowAccordion(!showAccordion);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [contentHeight]);
 
 	useEffect(() => {
