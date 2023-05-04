@@ -18,7 +18,7 @@ const AccordionItem = ({ question, answer, showItem, className }) => {
 	}, [descriptionRef]);
 
 	return (
-		<div className={s.main_container + ' ' + className}>
+		<div className={`${s.main_container} ${className}`}>
 			<div className={s.question_container}>
 				<Text text={question} textType={2} className={s.question_text} />
 				<div className={s.question_arrow}>
@@ -30,8 +30,10 @@ const AccordionItem = ({ question, answer, showItem, className }) => {
 				className={s.answer_animated_container}
 				style={{ height: `${showDescription ? `${descriptionHeight}px` : '0px'}` }}
 			>
-				<div className='h-fit w-full' ref={descriptionRef}>
-					<Text textType={4} text={answer} className={s.answer_text} />
+				<div className={s.answer_container} ref={descriptionRef}>
+					{answer.map((paragraph, index) => (
+						<Text key={index} textType={4} text={paragraph} className={s.answer_text} />
+					))}
 				</div>
 			</div>
 		</div>
