@@ -1,10 +1,9 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import MainLayout from '../layouts/MainLayout/MainLayout';
 import { PATHS } from '../constants/paths';
+import { AnimatePresence } from 'framer-motion';
+import MainLayout from '../layouts/MainLayout/MainLayout';
 import Home from '../pages/Home/Home';
 import GemstoneTherapy from '../pages/GemstoneTherapy/GemstoneTherapy';
-
-import { AnimatePresence } from 'framer-motion';
 import AstralSurgery from '../pages/AstralSurgery/AstralSurgery';
 
 const AnimatedRoutes = () => {

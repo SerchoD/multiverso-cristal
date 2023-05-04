@@ -2,9 +2,10 @@ import React from 'react';
 import useStyles from './useStyles';
 import FullBackGround from '../FullBackGround/FullBackGround';
 import { motion } from 'framer-motion';
+import Topbar from '../../components/Topbar/Topbar';
 
-const PageContainer = ({ children }) => {
-	const s = useStyles();
+const PageContainer = ({ children, showTopBar = true }) => {
+	const s = useStyles({ showTopBar });
 
 	return (
 		<motion.div
@@ -14,6 +15,7 @@ const PageContainer = ({ children }) => {
 			exit={{ opacity: 0 }}
 		>
 			<FullBackGround />
+			{showTopBar && <Topbar />}
 			<div className={s.elements_container}>{children}</div>
 		</motion.div>
 	);

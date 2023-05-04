@@ -19,7 +19,7 @@ const Home = () => {
 	};
 
 	return (
-		<PageContainer>
+		<PageContainer showTopBar={false}>
 			<div className={s.title_container}>
 				<h1>Multiverso</h1>
 				<h1>Cristal</h1>

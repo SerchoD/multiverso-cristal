@@ -1,6 +1,6 @@
 const useStyles = ({ showText, hideBackGround }) => {
 	const styles = {
-		main_container: `flex justify-center items-center fixed -left-0 w-screen h-screen z-[99]
+		main_container: `flex justify-center items-center fixed -left-0 top-0 w-screen h-screen z-[99] 
 			transition-all ease-in-out duration-[1500ms] ${
 			hideBackGround ? 'bg-neutral-900/[0%]' : 'bg-neutral-900/[100%]'
 		}`,

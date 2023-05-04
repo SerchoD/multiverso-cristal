@@ -15,12 +15,12 @@ const OpeningSplash = () => {
 	const [showTextCanceled, setShowTextCanceled] = useState(true);
 	const [hideBackGround, setHideBackGround] = useState(false);
 
-	const s = useStyles({ showText, hideBackGround });
-
 	const [timerStartText, setTimerStartText] = useState(null);
 	const [timerFinishText, setTimerFinishText] = useState(null);
 	const [timerShowBg, setTimerShowBg] = useState(null);
 	const [timerFinishComponent, setTimerFinishComponent] = useState(null);
+
+	const s = useStyles({ showText, hideBackGround });
 
 	const readingTime = useCallback(() => {
 		const result = sentenceToShow.sentence.length * 100;
