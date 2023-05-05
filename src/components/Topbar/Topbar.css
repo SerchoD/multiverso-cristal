@@ -1,0 +1,28 @@
+.topbar-menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.topbar-menu li {
+	padding: 10px;
+	margin: 0 10px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.topbar-indicator {
+	position: fixed;
+	top: 58px;
+
+	height: 2px;
+	width: 100px;
+	background-color: #eaf3ba;
+	box-shadow: 0 0 5px 4px rgba(255, 255, 250, 0.6);
+
+	border-radius: 100% 100% 100% 100%;
+
+	transition: all 0.5s ease;
+}
