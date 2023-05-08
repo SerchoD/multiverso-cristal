@@ -2,7 +2,7 @@ import React from 'react';
 import useStyles from './useStyles';
 import Text from '../Text/Text';
 
-const Button = ({ text, onClick, btnType, textType }) => {
+const Button = ({ text, onClick, btnType, textType, textClassName }) => {
 	const s = useStyles();
 
 	return (
@@ -10,7 +10,7 @@ const Button = ({ text, onClick, btnType, textType }) => {
 			<Text
 				text={text}
 				textType={textType | 1}
-				className={'text-black whitespace-nowrap'}
+				className={`text-black whitespace-nowrap ${textClassName}`}
 			/>
 		</button>
 	);

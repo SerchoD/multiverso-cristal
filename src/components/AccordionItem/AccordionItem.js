@@ -3,7 +3,13 @@ import Text from '../Text/Text';
 import DownArrow from '../../assets/icons/DownArrow';
 import useStyles from './useStyles';
 
-const AccordionItem = ({ question, answer, showItem, className }) => {
+const AccordionItem = ({
+	question,
+	answer,
+	showItem,
+	isEmpty = false,
+	className,
+}) => {
 	const descriptionRef = useRef(null);
 	const [descriptionHeight, setDescriptionHeight] = useState(null);
 	const [showDescription, setShowDescription] = useState(showItem);
@@ -21,18 +27,20 @@ const AccordionItem = ({ question, answer, showItem, className }) => {
 		<div className={`${s.main_container} ${className}`}>
 			<div className={s.question_container}>
 				<Text text={question} textType={2} className={s.question_text} />
-				<div className={s.question_arrow}>
-					<DownArrow />
-				</div>
+				{!isEmpty && (
+					<div className={s.question_arrow}>
+						<DownArrow />
+					</div>
+				)}
 			</div>
 
 			<div
-				className={s.answer_animated_container}
+				className={s?.answer_animated_container}
 				style={{ height: `${showDescription ? `${descriptionHeight}px` : '0px'}` }}
 			>
-				<div className={s.answer_container} ref={descriptionRef}>
-					{answer.map((paragraph, index) => (
-						<Text key={index} textType={4} text={paragraph} className={s.answer_text} />
+				<div className={s?.answer_container} ref={descriptionRef}>
+					{answer?.map((paragraph, index) => (
+						<Text key={index} textType={4} text={paragraph} className={s?.answer_text} />
 					))}
 				</div>
 			</div>

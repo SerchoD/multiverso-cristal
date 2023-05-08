@@ -1,4 +1,10 @@
 export const GEMSTONE_FAQ = [
+	// El primer objeto vacío está para 'solucionar' el bug del primer
+	// contenedor que no se expande lo suficiente...
+	{
+		question: '',
+		answer: [''],
+	},
 	{
 		question: '¿Cómo puedo contactar al soporte técnico?',
 		answer: [

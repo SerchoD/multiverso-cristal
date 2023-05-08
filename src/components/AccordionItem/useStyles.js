@@ -15,7 +15,7 @@ const useStyles = ({ showDescription }) => {
 		answer_animated_container: `w-full
 		 transition-all duration-500 ${showDescription && 'bg-white/[30%]'}`,
 
-		answer_container: 'h-fit w-full cursor-pointer overflow-y-auto pb-1',
+		answer_container: 'h-min w-full cursor-pointer pb-3',
 
 		answer_text: 'flex flex-start items-center mx-5 my-3 text-black indent-1 pb-1',
 	};

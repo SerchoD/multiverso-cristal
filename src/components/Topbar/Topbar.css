@@ -15,14 +15,27 @@
 
 .topbar-indicator {
 	position: fixed;
-	top: 58px;
 
-	height: 2px;
+	height: 3px;
 	width: 100px;
-	background-color: #eaf3ba;
+	background-image: linear-gradient(to right, #eaf3ba59, #eaf3ba, #eaf3ba59);
 	box-shadow: 0 0 5px 4px rgba(255, 255, 250, 0.6);
 
 	border-radius: 100% 100% 100% 100%;
 
 	transition: all 0.5s ease;
+}
+
+/* Establecer un ancho de 100 píxeles para Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.topbar-indicator {
+		top: 54px;
+	}
+}
+
+/* Establecer un ancho de 200 píxeles para Firefox */
+@-moz-document url-prefix() {
+	.topbar-indicator {
+		top: 58px;
+	}
 }
