@@ -12,7 +12,7 @@ const FAQ_EMPTY = [
 const FaQAccordion = ({ FAQ, className }) => {
 	const accordionHeightRef = useRef(null);
 	const [itemToShow, setItemToShow] = useState(false);
-	const [showAccordion, setShowAccordion] = useState(true); // TODO PONER EN FALSE
+	const [showAccordion, setShowAccordion] = useState(true);
 	const [contentHeight, setContentHeight] = useState(null);
 	const [filterKey, setFilterKey] = useState('');
 	const [filteredFAQList, setFilteredFAQList] = useState(FAQ_EMPTY);
@@ -105,9 +105,8 @@ const FaQAccordion = ({ FAQ, className }) => {
 			/>
 			<div
 				className={`${s.main_container} ${className}`}
-				// TODO BORRAR ESTE TRUE
 				style={{
-					height: `${showAccordion || true ? contentHeight : '0px'}`,
+					height: `${showAccordion ? contentHeight : '0px'}`,
 				}}
 			>
 				<div
