@@ -2,6 +2,7 @@ import React from 'react';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import FaQAccordion from '../../components/FAQAccordion/FAQAccordion';
 import { GEMSTONE_FAQ } from './gemstone_FAQ';
+import FormToEmail from '../../components/FormToEmail/FormToEmail';
 
 const GemstoneTherapy = () => {
 	return (
@@ -9,6 +10,7 @@ const GemstoneTherapy = () => {
 			<h1 className='mt-10'>Página de Gemoterapia</h1>
 
 			<FaQAccordion FAQ={GEMSTONE_FAQ} className={''} />
+			<FormToEmail className='mt-10' />
 		</PageContainer>
 	);
 };

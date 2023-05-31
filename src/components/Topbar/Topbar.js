@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Text from '../Text/Text';
 import './Topbar.css';
 
-const TOPBAR_ELEMENT = [
+export const TOPBAR_ELEMENT = [
 	// { name: 'Home', route: PATHS.BASE_URL },
 	{ name: 'Gemoterapia', route: PATHS.GEMSTONE_THERAPY },
 	{ name: 'Cirugía Astral', route: PATHS.ASTRAL_SURGERY },
