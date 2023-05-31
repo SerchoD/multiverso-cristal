@@ -53,11 +53,13 @@ const FormToEmail = () => {
 	};
 
 	const handleChangeInputs = (e) => {
-		const { name, value } = e.target;
-		setFormData((prevState) => ({
-			...prevState,
-			[name]: value,
-		}));
+		if (formData?.message?.length < 400) {
+			const { name, value } = e.target;
+			setFormData((prevState) => ({
+				...prevState,
+				[name]: value,
+			}));
+		}
 	};
 
 	// useEffect(() => {
@@ -133,7 +135,6 @@ const FormToEmail = () => {
 						name='message'
 						className={s?.text_area}
 						value={formData?.message}
-						maxLength={400}
 						onChange={handleChangeInputs}
 						placeholder='Ingresa tu mensaje'
 					/>
