@@ -10,15 +10,15 @@ const AnimatedRoutes = () => {
 	const location = useLocation();
 	return (
 		<AnimatePresence>
-			<Routes location={location} key={location.pathname}>
-				<Route path={PATHS.BASE_URL} element={<MainLayout />}>
+			<Routes location={location} key={location?.pathname}>
+				<Route path={PATHS?.BASE_URL?.route} element={<MainLayout />}>
 					<Route index element={<Home />} />
 
-					<Route path={PATHS.GEMSTONE_THERAPY} element={<GemstoneTherapy />} />
-					<Route path={PATHS.ASTRAL_SURGERY} element={<AstralSurgery />} />
+					<Route path={PATHS?.GEMSTONE_THERAPY?.route} element={<GemstoneTherapy />} />
+					<Route path={PATHS?.ASTRAL_SURGERY?.route} element={<AstralSurgery />} />
 				</Route>
 
-				<Route path='*' element={<Navigate to={PATHS.BASE_URL} />} />
+				<Route path='*' element={<Navigate to={PATHS?.BASE_URL?.route} />} />
 			</Routes>
 		</AnimatePresence>
 	);

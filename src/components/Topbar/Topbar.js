@@ -32,7 +32,7 @@ const Topbar = () => {
 	useEffect(() => {
 		const allItems = document.querySelector('.topbar-menu');
 
-		const currentItemName = TOPBAR_ELEMENT.find(
+		const currentItemName = Object.values(PATHS).find(
 			(element) => element.route === currentRoute
 		)?.name;
 

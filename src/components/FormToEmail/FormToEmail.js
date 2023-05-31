@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import AnimatedContainer from '../AnimatedContainer/AnimatedContainer';
-import emailjs from '@emailjs/browser';
 import {
 	EMAILJS_PUBLIC_KEY,
 	EMAILJS_SERVICE_ID,
@@ -10,6 +9,8 @@ import { useLocation } from 'react-router-dom';
 import { TOPBAR_ELEMENT } from '../Topbar/Topbar';
 import useStyles from './useStyles';
 import { validateEmailFormat, validatePropsNotEmpty } from '../../utils/utils';
+import { sendEmail } from '../../services/emailjs';
+import { PATHS } from '../../constants/paths';
 
 const FormToEmail = () => {
 	const s = useStyles();
@@ -22,49 +23,37 @@ const FormToEmail = () => {
 	});
 	const [completeForm, setCompleteForm] = useState(false);
 
-	const sendEmail = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		if (validatePropsNotEmpty(formData) && validateEmailFormat(formData?.email)) {
-			emailjs
-				.send(
-					EMAILJS_SERVICE_ID,
-					EMAILJS_TEMPLATE_ID,
-					{
-						current_page: TOPBAR_ELEMENT?.find((e) => e.route === currentRoute)?.name,
-						user_subject: formData?.subject,
-						user_name: formData?.name,
-						user_mail: formData?.email,
-						user_message: formData?.message,
-					},
-					EMAILJS_PUBLIC_KEY
-				)
-				.then(
-					(result) => {
-						console.log(result.text);
-					},
-					(error) => {
-						console.log(error.text);
-					}
-				);
+			const pageName = Object.values(PATHS).find(
+				(element) => element.route === currentRoute
+			)?.name;
+			try {
+				const response = await sendEmail({
+					current_page: pageName,
+					user_subject: formData?.subject,
+					user_name: formData?.name,
+					user_mail: formData?.email,
+					user_message: formData?.message,
+				});
+				console.log('response: ', response);
+			} catch (error) {
+				console.log('error', error);
+			}
 		} else {
 			setCompleteForm(true);
 		}
 	};
 
 	const handleChangeInputs = (e) => {
-		if (formData?.message?.length <= 400) {
-			const { name, value } = e.target;
-			setFormData((prevState) => ({
-				...prevState,
-				[name]: value,
-			}));
-		}
+		const { name, value } = e.target;
+		setFormData((prevState) => ({
+			...prevState,
+			[name]: value,
+		}));
 	};
-
-	// useEffect(() => {
-	// 	console.log('formData: ', formData);
-	// }, [formData]);
 
 	return (
 		<AnimatedContainer buttonName='Enviar Consulta' className={''}>
@@ -150,7 +139,7 @@ const FormToEmail = () => {
 				</div>
 
 				<button
-					onClick={sendEmail}
+					onClick={handleSubmit}
 					className='middle none center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none'
 					data-ripple-light='true'
 				>
