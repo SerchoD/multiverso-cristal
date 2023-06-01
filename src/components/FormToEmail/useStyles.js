@@ -7,11 +7,13 @@ const useStyles = () => {
 		inputs: `w-[90%] h-[35px]
         rounded-lg indent-2
       text-black text-base
+			bg-slate-200
         focus:outline focus:outline-3 focus:outline-offset-1 focus:outline-cyan-500/[50%]
         shadow-2xl`,
 		text_area: `w-[90%] h-[200px] px-3 py-3 leading-4
         rounded-lg indent-2
       text-black text-base
+			bg-slate-200
         focus:outline focus:outline-3 focus:outline-offset-1 focus:outline-cyan-500/[50%]
         shadow-2xl
     `,

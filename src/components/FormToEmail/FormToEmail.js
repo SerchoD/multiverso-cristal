@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedContainer from '../AnimatedContainer/AnimatedContainer';
-import {
-	EMAILJS_PUBLIC_KEY,
-	EMAILJS_SERVICE_ID,
-	EMAILJS_TEMPLATE_ID,
-} from '../../constants/emailjs';
 import { useLocation } from 'react-router-dom';
-import { TOPBAR_ELEMENT } from '../Topbar/Topbar';
 import useStyles from './useStyles';
 import { validateEmailFormat, validatePropsNotEmpty } from '../../utils/utils';
 import { sendEmail } from '../../services/emailjs';
 import { PATHS } from '../../constants/paths';
+import useToastStore from '../../zustand/stores/toast.store';
+import LoaderSpin from '../LoaderSpin/LoaderSpin';
+
+const initialState = {
+	name: '',
+	email: '',
+	subject: '',
+	message: '',
+};
 
 const FormToEmail = () => {
 	const s = useStyles();
+	const { showToast } = useToastStore();
 	const { pathname: currentRoute } = useLocation();
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		subject: '',
-		message: '',
-	});
+	const [formData, setFormData] = useState(initialState);
 	const [completeForm, setCompleteForm] = useState(false);
+	const [isLoading, setIsLoading] = useState(false);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -31,6 +31,7 @@ const FormToEmail = () => {
 				(element) => element.route === currentRoute
 			)?.name;
 			try {
+				setIsLoading(true);
 				const response = await sendEmail({
 					current_page: pageName,
 					user_subject: formData?.subject,
@@ -38,9 +39,27 @@ const FormToEmail = () => {
 					user_mail: formData?.email,
 					user_message: formData?.message,
 				});
-				console.log('response: ', response);
+
+				if (response.status === 200) {
+					showToast({
+						message: 'Consulta enviada correctamente',
+						duration: 6000,
+						type: 'success',
+					});
+				}
+				setFormData(initialState);
+				document.documentElement.scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
 			} catch (error) {
-				console.log('error', error);
+				showToast({
+					message: 'Ups! Algo salió mal!',
+					duration: 6000,
+					type: 'error',
+				});
+			} finally {
+				setIsLoading(false);
 			}
 		} else {
 			setCompleteForm(true);
@@ -56,7 +75,7 @@ const FormToEmail = () => {
 	};
 
 	return (
-		<AnimatedContainer buttonName='Enviar Consulta' className={''}>
+		<AnimatedContainer buttonName='Enviar Consulta'>
 			<div className={s?.main_container}>
 				<div className={s?.input_container}>
 					<label className={s?.label} htmlFor='name'>
@@ -129,21 +148,21 @@ const FormToEmail = () => {
 						placeholder='Ingresa tu mensaje'
 					/>
 					<div className='w-[90%] flex justify-between'>
-						<p className='self-start text-gray-200/[50%] text-xs'>
+						<p className='self-start text-gray-200/[50%] text-xs mt-1'>
 							{formData?.message?.length}/400
 						</p>
 						{completeForm && formData?.message?.length <= 0 && (
-							<p className={s?.error_text + ' mr-[0%]'}>Ingrese un mensaje</p>
+							<p className={s?.error_text + ' -mr-[0%]'}>Ingrese un mensaje</p>
 						)}
 					</div>
 				</div>
 
 				<button
 					onClick={handleSubmit}
-					className='middle none center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none'
+					className='middle none w-[50%] h-[50px] center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none'
 					data-ripple-light='true'
 				>
-					Enviar
+					{isLoading ? <LoaderSpin /> : 'Enviar'}
 				</button>
 			</div>
 		</AnimatedContainer>
