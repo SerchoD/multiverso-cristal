@@ -25,6 +25,7 @@ const Toast = () => {
 				setShowToast(false);
 			}, duration - 1000);
 		}
+		// eslint-disable-next-line
 	}, [isToastVisible]);
 
 	return (
