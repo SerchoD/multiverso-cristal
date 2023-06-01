@@ -41,7 +41,7 @@ const AnimatedContainer = ({ children, buttonName }) => {
 	}, [accordionHeightRef, showAccordion]);
 
 	return (
-		<div className={`flex flex-col items-center w-full mt-5 pb-5`}>
+		<div className={`flex flex-col items-center w-full mt-5 pb-6`}>
 			<Button
 				text={buttonName}
 				textType={2}
