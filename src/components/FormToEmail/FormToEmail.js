@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import AnimatedContainer from '../AnimatedContainer/AnimatedContainer';
 import { useLocation } from 'react-router-dom';
 import useStyles from './useStyles';
-import { validateEmailFormat, validatePropsNotEmpty } from '../../utils/utils';
+import {
+	currentFormattedDate,
+	validateEmailFormat,
+	validatePropsNotEmpty,
+} from '../../utils/utils';
 import { sendEmail } from '../../services/emailjs';
 import { PATHS } from '../../constants/paths';
 import useToastStore from '../../zustand/stores/toast.store';
@@ -38,6 +42,7 @@ const FormToEmail = () => {
 					user_name: formData?.name,
 					user_mail: formData?.email,
 					user_message: formData?.message,
+					sending_date: currentFormattedDate(),
 				});
 
 				if (response.status === 200) {
@@ -48,10 +53,6 @@ const FormToEmail = () => {
 					});
 				}
 				setFormData(initialState);
-				document.documentElement.scrollTo({
-					top: 0,
-					behavior: 'smooth',
-				});
 			} catch (error) {
 				showToast({
 					message: 'Ups! Algo salió mal!',

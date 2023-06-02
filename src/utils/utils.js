@@ -15,3 +15,39 @@ export const validatePropsNotEmpty = (formData) => {
 	}
 	return true;
 };
+
+export const currentFormattedDate = () => {
+	const daysOfWeek = [
+		'Domingo',
+		'Lunes',
+		'Martes',
+		'Miércoles',
+		'Jueves',
+		'Viernes',
+		'Sábado',
+	];
+	const months = [
+		'Enero',
+		'Febrero',
+		'Marzo',
+		'Abril',
+		'Mayo',
+		'Junio',
+		'Julio',
+		'Agosto',
+		'Septiembre',
+		'Octubre',
+		'Noviembre',
+		'Diciembre',
+	];
+
+	const currentDate = new Date();
+	const currentDay = daysOfWeek[currentDate.getDay()];
+	const day = currentDate.getDate();
+	const month = months[currentDate.getMonth()];
+	const year = currentDate.getFullYear();
+
+	const formattedDate = `${currentDay}, ${day} de ${month}, del ${year}.`;
+
+	return formattedDate;
+};
