@@ -46,8 +46,12 @@ export const currentFormattedDate = () => {
 	const day = currentDate.getDate();
 	const month = months[currentDate.getMonth()];
 	const year = currentDate.getFullYear();
+	const hours = currentDate.getHours();
+	const minutes = currentDate.getMinutes();
 
-	const formattedDate = `${currentDay}, ${day} de ${month}, del ${year}.`;
+	const formattedDate = `${currentDay}, ${day} de ${month}, del ${year}, a las ${hours}:${minutes
+		.toString()
+		.padStart(2, '0')}hs.`;
 
 	return formattedDate;
 };
