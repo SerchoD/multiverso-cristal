@@ -12,7 +12,7 @@ import { PATHS } from '../../constants/paths';
 import useToastStore from '../../zustand/stores/toast.store';
 import LoaderSpin from '../LoaderSpin/LoaderSpin';
 import useModalStore from '../../zustand/stores/modal.store';
-import { modalVerifyEmail } from './modalVerifyEmail';
+import { modalVerifyEmail_JSX } from './modalVerifyEmail_JSX';
 
 const initialState = {
 	name: '',
@@ -36,7 +36,7 @@ const FormToEmail = () => {
 
 		if (validatePropsNotEmpty(formData) && validateEmailFormat(formData?.email)) {
 			showModal(
-				modalVerifyEmail({
+				modalVerifyEmail_JSX({
 					email: formData?.email,
 					callBackCloseModal: () => closeModal(),
 					callBackSendMail: () => {

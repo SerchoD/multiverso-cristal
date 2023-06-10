@@ -1,6 +1,6 @@
 import Text from '../Text/Text';
 
-export const modalVerifyEmail = ({
+export const modalVerifyEmail_JSX = ({
 	email,
 	callBackCloseModal,
 	callBackSendMail,
