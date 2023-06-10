@@ -11,6 +11,8 @@ import { sendEmail } from '../../services/emailjs';
 import { PATHS } from '../../constants/paths';
 import useToastStore from '../../zustand/stores/toast.store';
 import LoaderSpin from '../LoaderSpin/LoaderSpin';
+import useModalStore from '../../zustand/stores/modal.store';
+import { modalVerifyEmail_JSX } from './modalVerifyEmail_JSX';
 
 const initialState = {
 	name: '',
@@ -22,6 +24,8 @@ const initialState = {
 const FormToEmail = () => {
 	const s = useStyles();
 	const { showToast } = useToastStore();
+	const { showModal, closeModal } = useModalStore();
+
 	const { pathname: currentRoute } = useLocation();
 	const [formData, setFormData] = useState(initialState);
 	const [completeForm, setCompleteForm] = useState(false);
@@ -31,39 +35,53 @@ const FormToEmail = () => {
 		e.preventDefault();
 
 		if (validatePropsNotEmpty(formData) && validateEmailFormat(formData?.email)) {
-			const pageName = Object.values(PATHS).find(
-				(element) => element.route === currentRoute
-			)?.name;
-			try {
-				setIsLoading(true);
-				const response = await sendEmail({
-					current_page: pageName,
-					user_subject: formData?.subject,
-					user_name: formData?.name,
-					user_mail: formData?.email,
-					user_message: formData?.message,
-					sending_date: currentFormattedDate(),
-				});
-
-				if (response.status === 200) {
-					showToast({
-						message: 'Consulta enviada correctamente',
-						duration: 6000,
-						type: 'success',
-					});
-				}
-				setFormData(initialState);
-			} catch (error) {
-				showToast({
-					message: 'Ups! Algo salió mal!',
-					duration: 6000,
-					type: 'error',
-				});
-			} finally {
-				setIsLoading(false);
-			}
+			showModal(
+				modalVerifyEmail_JSX({
+					email: formData?.email,
+					callBackCloseModal: () => closeModal(),
+					callBackSendMail: () => {
+						handleSendEmail();
+						closeModal();
+					},
+				})
+			);
 		} else {
 			setCompleteForm(true);
+		}
+	};
+
+	const handleSendEmail = async () => {
+		const pageName = Object.values(PATHS).find(
+			(element) => element.route === currentRoute
+		)?.name;
+		try {
+			setIsLoading(true);
+			const response = await sendEmail({
+				current_page: pageName,
+				user_subject: formData?.subject,
+				user_name: formData?.name,
+				user_mail: formData?.email,
+				user_message: formData?.message,
+				sending_date: currentFormattedDate(),
+			});
+
+			if (response.status === 200) {
+				showToast({
+					message: 'Consulta enviada correctamente',
+					duration: 6000,
+					type: 'success',
+				});
+				setCompleteForm(false);
+			}
+			setFormData(initialState);
+		} catch (error) {
+			showToast({
+				message: 'Ups! Algo salió mal!',
+				duration: 6000,
+				type: 'error',
+			});
+		} finally {
+			setIsLoading(false);
 		}
 	};
 
@@ -163,7 +181,7 @@ const FormToEmail = () => {
 					className='middle none w-[50%] h-[50px] center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none'
 					data-ripple-light='true'
 				>
-					{isLoading ? <LoaderSpin /> : 'Enviar'}
+					{isLoading ? <LoaderSpin /> : 'enviar'}
 				</button>
 			</div>
 		</AnimatedContainer>
