@@ -20,8 +20,7 @@ const Topbar = () => {
 
 	const handleRouteClick = (item, element) => {
 		const itemData = element.getBoundingClientRect();
-
-		navigate(item?.route);
+		navigate(item?.route?.route);
 
 		setIndicatorPosition({
 			width: `${itemData.width - 10}px`,
