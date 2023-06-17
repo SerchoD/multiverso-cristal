@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from 'infinite-react-carousel';
 import useViewport from '../../hooks/useViewport';
 
@@ -27,6 +27,7 @@ const Carousel = ({ className, images }) => {
 							key={image?.id}
 							src={image?.img}
 							className={`w-[500px] isMobile:w-screen h-[400px] rounded-3xl object-cover`}
+							alt={'Imagen pendiente...'}
 						/>
 					);
 				})}
