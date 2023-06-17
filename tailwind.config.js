@@ -10,11 +10,11 @@ module.exports = {
 				'background-1': "url('../src/assets/backgrounds/madera-cristal-chica.jpg')",
 				'background-2': "url('../src/assets/backgrounds/piedras-colores-cerca.jpg')",
 				'background-3': "url('../src/assets/backgrounds/piedras-colores-lejos.jpg')",
-				'img-1': "url('../src/assets/images/teatro-1.jpg')",
-				'img-2': "url('../src/assets/images/gemoterapia-1.jpg')",
-				'img-3': "url('../src/assets/images/cirugia-astral-1.jpg')",
-				'img-4': "url('../src/assets/images/old-book-1.jpg')",
-				'img-5': "url('../src/assets/images/meditation-1.jpg')",
+				'img-1': "url('../src/assets/images/home/teatro-1.jpg')",
+				'img-2': "url('../src/assets/images/home/gemoterapia-1.jpg')",
+				'img-3': "url('../src/assets/images/home/cirugia-astral-1.jpg')",
+				'img-4': "url('../src/assets/images/home/old-book-1.jpg')",
+				'img-5': "url('../src/assets/images/home/meditation-1.jpg')",
 			},
 			screens: {
 				// Styles are DESKTOP FIRST
