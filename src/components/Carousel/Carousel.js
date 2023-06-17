@@ -1,15 +1,36 @@
-import React from 'react';
-// import { randomHexadecimal as rnd } from '../../utils/random';
+import React, { useState } from 'react';
 import Slider from 'infinite-react-carousel';
+import useViewport from '../../hooks/useViewport';
 
-const Carousel = () => {
+const Carousel = ({ className, images }) => {
+	const { isMobile, isDesktop } = useViewport();
+
 	return (
-		<div className='w-full h-[500px] border-2 my-5'>
-			{/* <Slider
-				className='border-2 border-red-600 h-auto w-auto'
+		<div className={`isDesktop:w-full isMobile:w-screen h-auto ${className}`}>
+			<Slider
 				dots
-				slidesPerRow={3}
-			></Slider> */}
+				arrows={isDesktop}
+				arrowsBlock={true}
+				centerMode
+				autoplay={isDesktop}
+				autoplaySpeed={10000}
+				swipe={isMobile}
+				adaptiveHeight
+				shift={isDesktop ? 200 : 10}
+				initialSlide={0}
+				slidesPerRow={1}
+				slidesToShow={isDesktop ? 3 : 1}
+			>
+				{images?.map((image) => {
+					return (
+						<img
+							key={image?.id}
+							src={image?.img}
+							className={`w-[500px] isMobile:w-screen h-[400px] rounded-3xl object-cover`}
+						/>
+					);
+				})}
+			</Slider>
 		</div>
 	);
 };
