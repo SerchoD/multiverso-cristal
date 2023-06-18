@@ -154,3 +154,35 @@ code {
 		transform: translateY(100%);
 	}
 }
+
+.mobileMenu-in {
+	animation-name: mobileMenu-in;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes mobileMenu-in {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.mobileMenu-out {
+	animation-name: mobileMenu-out;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes mobileMenu-out {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
