@@ -1,12 +1,12 @@
 import { PATHS } from '../../constants/paths';
 
 export const CARD_DATA = [
-	{
-		title: 'Teatro Holístico',
-		description:
-			'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: 'bg-img-1',
-	},
+	// {
+	// 	title: 'Teatro Holístico',
+	// 	description:
+	// 		'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
+	// 	image: 'bg-img-1',
+	// },
 	{
 		title: 'Gemoterapia',
 		description:
@@ -21,49 +21,16 @@ export const CARD_DATA = [
 		image: 'bg-img-3',
 		route: PATHS.ASTRAL_SURGERY.route,
 	},
-	{
-		title: 'Registros Akáshicos',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: 'bg-img-4',
-	},
-	{
-		title: 'Alineación de Chakras',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-		image: 'bg-img-5',
-	},
+	// {
+	// 	title: 'Registros Akáshicos',
+	// 	description:
+	// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
+	// 	image: 'bg-img-4',
+	// },
+	// {
+	// 	title: 'Alineación de Chakras',
+	// 	description:
+	// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
+	// 	image: 'bg-img-5',
+	// },
 ];
-
-// const ELEMENTS = [
-// 	{
-// 		title: ' Titulo',
-// 		description:
-// 			'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-// 		image: 'bg-img-1',
-// 	},
-// 	{
-// 		title: 'Titulo',
-// 		description:
-// 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-// 		image: 'bg-img-2',
-// 	},
-// 	{
-// 		title: ' Titulo',
-// 		description:
-// 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-// 		image: 'bg-img-3',
-// 	},
-// 	{
-// 		title: ' Titulo',
-// 		description:
-// 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-// 		image: 'bg-img-4',
-// 	},
-// 	{
-// 		title: '  Titulo',
-// 		description:
-// 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
-// 		image: 'bg-img-5',
-// 	},
-// ];

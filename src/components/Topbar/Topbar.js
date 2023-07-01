@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useStyles from './useStyles';
-import { PATHS } from '../../constants/paths';
+import { NAVIGATION_ELEMENTS, PATHS } from '../../constants/paths';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Text from '../Text/Text';
 import './Topbar.css';
@@ -8,12 +8,6 @@ import useViewport from '../../hooks/useViewport';
 import IconBurger from '../../assets/icons/IconBurger';
 import MobileTopbarMenu from './MobileTopbarMenu/MobileTopbarMenu';
 import useMobileTopbar from '../../zustand/stores/mobileTopbar.store';
-
-export const TOPBAR_ELEMENT = [
-	// { name: 'Home', route: PATHS.BASE_URL },
-	{ name: 'Gemoterapia', route: PATHS.GEMSTONE_THERAPY },
-	{ name: 'Cirugía Astral', route: PATHS.ASTRAL_SURGERY },
-];
 
 const Topbar = () => {
 	const navigate = useNavigate();
@@ -67,7 +61,7 @@ const Topbar = () => {
 		<div className={s?.main_container}>
 			<div className={s?.desktop_topbar}>
 				<ul className='topbar-menu'>
-					{TOPBAR_ELEMENT.map((item) => {
+					{NAVIGATION_ELEMENTS.map((item) => {
 						let isActive = false;
 						if (item.route === currentRoute) isActive = true;
 

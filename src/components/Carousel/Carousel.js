@@ -12,9 +12,9 @@ const Carousel = ({ className, images }) => {
 				arrows={isDesktop}
 				arrowsBlock={true}
 				centerMode
-				autoplay={isDesktop}
+				autoplay={true}
 				autoplaySpeed={10000}
-				swipe={isMobile}
+				swipe={true}
 				adaptiveHeight
 				shift={isDesktop ? 200 : 10}
 				initialSlide={0}
