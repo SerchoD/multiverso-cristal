@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './useStyles';
 import Text from '../../../Text/Text';
-import IconBackArrow from '../../../../assets/icons/IconBackArrow';
+import IconArrow1 from '../../../../assets/icons/IconArrow1';
 import { useNavigate } from 'react-router-dom';
 import useMobileTopbar from '../../../../zustand/stores/mobileTopbar.store';
 
@@ -26,7 +26,7 @@ const MobileTopbarMenuNavElements = ({ elements }) => {
 					>
 						<Text text={element?.name} textType={2} className={s?.center_text} />
 						<div className={s?.arrow}>
-							<IconBackArrow />
+							<IconArrow1 />
 						</div>
 					</div>
 				);

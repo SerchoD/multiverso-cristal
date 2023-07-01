@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconBackArrow = () => {
+const IconArrow1 = () => {
 	return (
 		<svg fill='rgb(200,200,200)' height='25px' width='25px' viewBox='0 0 492 492'>
 			<g>
@@ -10,4 +10,4 @@ const IconBackArrow = () => {
 	);
 };
 
-export default IconBackArrow;
+export default IconArrow1;

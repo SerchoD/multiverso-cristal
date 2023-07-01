@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './useStyles';
 import useMobileTopbar from '../../../zustand/stores/mobileTopbar.store';
-import IconBackArrow from '../../../assets/icons/IconBackArrow';
+import IconArrow1 from '../../../assets/icons/IconArrow1';
 import IconInstagram from '../../../assets/icons/IconInstagram';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
@@ -35,7 +35,7 @@ const MobileTopbarMenu = () => {
 			<div className={s?.menu_board}>
 				<div className={s?.topbar_container}>
 					<div className='h-fit w-fit p-3 cursor-pointer' onClick={hideMobileTopbar}>
-						<IconBackArrow />
+						<IconArrow1 />
 					</div>
 					<div className='w-[70%] flex justify-center'>
 						{/* <h1 className='self-center pl-[15%] '>{currentPageName}</h1> */}
