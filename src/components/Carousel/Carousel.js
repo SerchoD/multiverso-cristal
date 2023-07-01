@@ -3,7 +3,7 @@ import Slider from 'infinite-react-carousel';
 import useViewport from '../../hooks/useViewport';
 
 const Carousel = ({ className, images }) => {
-	const { isMobile, isDesktop } = useViewport();
+	const { isDesktop } = useViewport();
 
 	return (
 		<div className={`isDesktop:w-full isMobile:w-screen h-auto ${className}`}>
