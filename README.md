@@ -7,3 +7,6 @@ An own and private web site.
 
 - Carousel Library Documentation:
   https://www.npmjs.com/package/infinite-react-carousel/v/1.2.11?activeTab=readme
+
+- The netlify.toml file, fixes a problem where netlify breaks at refreshing
+  an URL that is not '/index.html'.

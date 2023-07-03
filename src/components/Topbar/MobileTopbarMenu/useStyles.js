@@ -16,7 +16,7 @@ const useStyles = () => {
 		body_container: `flex flex-col justify-start items-center
 											w-full flex-grow`,
 
-		footer_container: `flex justify-center w-full h-[50px] absolute** bottom-0* 
+		footer_container: `flex flex-col justify-between items-center w-full h-[110px] 
 							bg-slate-600
 		 						shadow-[0px_0px_10px_5px_rgba(0,0,0,.2)]`,
 

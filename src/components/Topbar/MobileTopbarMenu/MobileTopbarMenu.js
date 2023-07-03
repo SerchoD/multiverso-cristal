@@ -49,14 +49,17 @@ const MobileTopbarMenu = () => {
 				</div>
 
 				<footer className={s?.footer_container}>
-					<a
-						className='h-full w-fit flex flex-col justify-center px-2'
-						href='https://www.instagram.com/multiverso.cristal/'
-						target='_blank'
-						rel='noreferrer'
-					>
-						<IconInstagram />
-					</a>
+					<div>
+						<a
+							className='h-fit w-fit flex flex-col justify-center p-2'
+							href='https://www.instagram.com/multiverso.cristal/'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<IconInstagram />
+						</a>
+					</div>
+					<h1 className='mb-3 font-flamenco text-base'>Multiverso Cristal</h1>
 				</footer>
 			</div>
 
