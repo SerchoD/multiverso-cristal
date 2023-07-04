@@ -10,7 +10,7 @@ const Button = ({ text, onClick, btnType, textType, textClassName }) => {
 			<Text
 				text={text}
 				textType={textType | 1}
-				className={`text-black whitespace-nowrap ${textClassName}`}
+				className={`text-black** whitespace-nowrap ${textClassName} p-1`}
 			/>
 		</button>
 	);

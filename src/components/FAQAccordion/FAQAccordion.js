@@ -95,7 +95,7 @@ const FaQAccordion = ({ FAQ, className }) => {
 	}, [filteredFAQList]);
 
 	return (
-		<>
+		<div className='flex flex-col justify-start items-center w-full mt-5 pb-6'>
 			<Button
 				text='Preguntas Frecuentes'
 				textType={2}
@@ -127,7 +127,7 @@ const FaQAccordion = ({ FAQ, className }) => {
 							</div>
 						) : (
 							<div
-								className='w-fit h-fit pb-2  relative -left-8 top-2 cursor-pointer'
+								className='w-fit h-fit pb-2 relative -left-8 top-2 cursor-pointer'
 								onClick={handleDeleteFilterKey}
 							>
 								<IconCross />
@@ -161,7 +161,7 @@ const FaQAccordion = ({ FAQ, className }) => {
 					})}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

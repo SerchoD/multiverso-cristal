@@ -5,6 +5,15 @@ const useStyles = () => {
    			| bg-gradient-to-r from-purple-300/[50%] via-green-300/[30%] to-red-300/[50%] |
 				shadow-[0_0px_10px_10px_rgba(0,0,0,.3)]`,
 		desktop_topbar: `isMobile:hidden`,
+
+		logo_container: `absolute left-0 flex ml-5 mt-1 p-2 self-center cursor-pointer select-none
+										scale-[98%]
+										hover:scale-[100%] transition-all
+		`,
+
+		logo_text_container: `flex flex-col items-center ml-4
+				font-flamenco font-bold leading-4 tracking-wide text-lg text-white text-shadow-7`,
+
 		element_container: `flex cursor-pointer 				
 				transition-all
 				text-shadow-1

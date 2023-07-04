@@ -29,7 +29,9 @@ const AccordionItem = ({
 				<Text text={question} textType={2} className={s.question_text} />
 				{!isEmpty && (
 					<div className={s.question_arrow}>
-						<DownArrow />
+						<div className={s?.question_arrow_2}>
+							<DownArrow />
+						</div>
 					</div>
 				)}
 			</div>

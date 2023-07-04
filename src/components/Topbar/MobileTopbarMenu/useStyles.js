@@ -8,7 +8,7 @@ const useStyles = () => {
 								`,
 
 		topbar_container: `flex items-center
-											w-full h-fit bg-slate-600
+											w-full h-14 bg-slate-600
 											shadow-[0px_0px_10px_5px_rgba(0,0,0,.3)] `,
 		center_text: `	text-amber-300
 											text-shadow-3 p-2`,
@@ -16,7 +16,7 @@ const useStyles = () => {
 		body_container: `flex flex-col justify-start items-center
 											w-full flex-grow`,
 
-		footer_container: `flex flex-col justify-between items-center w-full h-[110px] 
+		footer_container: `flex flex-col justify-between items-center w-full h-[104px] 
 							bg-slate-600
 		 						shadow-[0px_0px_10px_5px_rgba(0,0,0,.2)]`,
 

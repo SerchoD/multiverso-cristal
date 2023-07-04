@@ -10,6 +10,7 @@
 	overflow: hidden;
 	scroll-behavior: smooth;
 	flex-shrink: 0;
+	overscroll-behavior-y: contain;
 }
 
 body {
@@ -58,6 +59,15 @@ code {
 		background-color: #d4d4d452;
 	}
 
+	.gradient-1 {
+		background-image: linear-gradient(
+			to right,
+			transparent,
+			rgba(0, 0, 0, 0.75) 50%,
+			transparent
+		);
+	}
+
 	.text-shadow-1 {
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	}
@@ -73,9 +83,11 @@ code {
 	.text-shadow-5 {
 		text-shadow: 10px 15px 10px rgba(0, 0, 0, 1);
 	}
-
 	.text-shadow-6 {
 		text-shadow: 0px -8px 7px rgba(0, 0, 0, 0.4);
+	}
+	.text-shadow-7 {
+		text-shadow: 0px 0px 8px rgb(250 250 0 / 0.7);
 	}
 
 	.box-shadow-1 {
