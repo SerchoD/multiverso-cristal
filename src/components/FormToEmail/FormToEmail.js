@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import AnimatedContainer from '../AnimatedContainer/AnimatedContainer';
 import { useLocation } from 'react-router-dom';
 import useStyles from './useStyles';
