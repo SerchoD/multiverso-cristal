@@ -10,8 +10,9 @@ const Text = ({ className, text, textType, textSelectable, style }) => {
 				textSelectable ? 'select-text' : 'select-none'
 			} `}
 			style={style}
+			dangerouslySetInnerHTML={{ __html: text }}
 		>
-			{text}
+			{/* {text} */}
 		</div>
 	);
 };

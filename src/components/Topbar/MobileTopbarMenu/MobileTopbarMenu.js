@@ -9,6 +9,7 @@ import { NAVIGATION_ELEMENTS, PATHS } from '../../../constants/paths';
 import { useEffect } from 'react';
 import Text from '../../Text/Text';
 import MobileTopbarMenuNavElements from './MobileTopbarMenuNavElements/MobileTopbarMenuNavElements';
+import MC_Logo from '../../MC_Logo/MC_Logo';
 
 const MobileTopbarMenu = () => {
 	const s = useStyles();
@@ -43,7 +44,11 @@ const MobileTopbarMenu = () => {
 					</div>
 				</div>
 				<div className={s?.body_container}>
-					<div className='mt-10 w-full'>
+					<div className='w-full flex justify-center mt-0 gradient-1'>
+						<MC_Logo />
+					</div>
+
+					<div className='mt-5 w-full'>
 						<MobileTopbarMenuNavElements elements={NAVIGATION_ELEMENTS} />
 					</div>
 				</div>

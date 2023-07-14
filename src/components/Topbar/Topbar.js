@@ -8,6 +8,8 @@ import useViewport from '../../hooks/useViewport';
 import IconBurger from '../../assets/icons/IconBurger';
 import MobileTopbarMenu from './MobileTopbarMenu/MobileTopbarMenu';
 import useMobileTopbar from '../../zustand/stores/mobileTopbar.store';
+import IconCrystal_1 from '../../assets/icons/IconCrystal_1';
+import MC_Logo from '../MC_Logo/MC_Logo';
 
 const Topbar = () => {
 	const navigate = useNavigate();
@@ -15,7 +17,7 @@ const Topbar = () => {
 	const { pathname: currentRoute } = useLocation();
 	const [currentPageName, setCurrentPageName] = useState('');
 	const [indicatorPosition, setIndicatorPosition] = useState({});
-	const { isMobile } = useViewport();
+	const { isMobile, isDesktop } = useViewport();
 
 	const s = useStyles({ currentRoute });
 
@@ -60,6 +62,12 @@ const Topbar = () => {
 	return (
 		<div className={s?.main_container}>
 			<div className={s?.desktop_topbar}>
+				{isDesktop && (
+					<div className='absolute left-0 -top-0 flex ml-2'>
+						<MC_Logo />
+					</div>
+				)}
+
 				<ul className='topbar-menu'>
 					{NAVIGATION_ELEMENTS.map((item) => {
 						let isActive = false;

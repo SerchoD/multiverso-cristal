@@ -17,7 +17,7 @@ export const modalVerifyEmail_JSX = ({
 		<div
 			className={`
 			bg-white/[90%]
-				w-[40vw] h-[50vh] 
+				w-[40vw] h-[90vh] max-h-[500px]
 				isMobile:w-[90vw] isMobile:h-[90vh]
 				flex flex-col justify-between items-center
 				rounded-2xl

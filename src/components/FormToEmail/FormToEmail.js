@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedContainer from '../AnimatedContainer/AnimatedContainer';
 import { useLocation } from 'react-router-dom';
 import useStyles from './useStyles';
@@ -13,11 +13,13 @@ import useToastStore from '../../zustand/stores/toast.store';
 import LoaderSpin from '../LoaderSpin/LoaderSpin';
 import useModalStore from '../../zustand/stores/modal.store';
 import { modalVerifyEmail_JSX } from './modalVerifyEmail_JSX';
+import { COUNTRIES } from '../../constants/countries';
 
 const initialState = {
 	name: '',
 	email: '',
 	subject: '',
+	country: 'Argentina',
 	message: '',
 };
 
@@ -62,6 +64,7 @@ const FormToEmail = () => {
 				user_name: formData?.name,
 				user_mail: formData?.email,
 				user_message: formData?.message,
+				user_country: formData?.country,
 				sending_date: currentFormattedDate(),
 			});
 
@@ -151,6 +154,27 @@ const FormToEmail = () => {
 					{completeForm && !validateEmailFormat(formData?.email) && (
 						<p className={s?.error_text}>Correo Inválido</p>
 					)}
+				</div>
+
+				<div className={s?.input_container}>
+					<label className={s?.label} htmlFor='country'>
+						¿Dónde estás?
+					</label>
+					<select
+						id='country'
+						name='country'
+						className={s?.inputs}
+						value={formData?.country}
+						maxLength={50}
+						onChange={handleChangeInputs}
+						placeholder='Pais...'
+					>
+						{COUNTRIES?.map((country) => (
+							<option key={country} value={country}>
+								{country}
+							</option>
+						))}
+					</select>
 				</div>
 
 				<div className={s?.input_container + 'pb-10'}>
