@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconCrystal_1 = () => {
+const IconCrystal1 = () => {
 	return (
 		<svg
 			className='p-3'
@@ -22,4 +22,4 @@ const IconCrystal_1 = () => {
 	);
 };
 
-export default IconCrystal_1;
+export default IconCrystal1;

@@ -8,8 +8,7 @@ import useViewport from '../../hooks/useViewport';
 import IconBurger from '../../assets/icons/IconBurger';
 import MobileTopbarMenu from './MobileTopbarMenu/MobileTopbarMenu';
 import useMobileTopbar from '../../zustand/stores/mobileTopbar.store';
-import IconCrystal_1 from '../../assets/icons/IconCrystal_1';
-import MC_Logo from '../MC_Logo/MC_Logo';
+import MCLogo from '../MCLogo/MCLogo';
 
 const Topbar = () => {
 	const navigate = useNavigate();
@@ -64,7 +63,7 @@ const Topbar = () => {
 			<div className={s?.desktop_topbar}>
 				{isDesktop && (
 					<div className='absolute left-0 -top-0 flex ml-2'>
-						<MC_Logo />
+						<MCLogo />
 					</div>
 				)}
 
