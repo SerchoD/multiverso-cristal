@@ -9,7 +9,7 @@ const Carousel = ({ className, images }) => {
 		<div className={`isDesktop:w-full isMobile:w-screen h-auto ${className}`}>
 			<Slider
 				dots
-				arrows={isDesktop}
+				arrows={false}
 				arrowsBlock={true}
 				centerMode
 				autoplay={true}
