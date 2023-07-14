@@ -1,11 +1,18 @@
 import './App.css';
+import RouterApp from './Router/RouterApp';
+import OpeningSplash from './components/OpeningSplash/OpeningSplash';
+import Modal from './components/global_components/Modal/Modal';
+import Toast from './components/global_components/Toast/Toast';
 
-function App() {
+const App = () => {
 	return (
 		<div className='App'>
-			<h1 class='text-3xl font-bold underline text-blue-700'>Hello world!</h1>
+			<Modal />
+			<Toast />
+			<OpeningSplash />
+			<RouterApp />
 		</div>
 	);
-}
+};
 
 export default App;
