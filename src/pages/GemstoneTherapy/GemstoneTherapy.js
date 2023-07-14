@@ -14,7 +14,7 @@ const GemstoneTherapy = () => {
 			<Carousel images={GEMSTONES_IMAGES} className={'mt-10'} />
 			<div className='my-5 flex justify-center gradient-1'>
 				<div
-					className='w-[70%] isMobile:w-[90%] my-5 h-[300px] overflow-y-auto'
+					className='w-[70%] isMobile:w-[90%] my-5 isDesktop:h-fit overflow-y-auto'
 					onTouchMove={(e) => {
 						e.stopPropagation();
 						e.preventDefault();

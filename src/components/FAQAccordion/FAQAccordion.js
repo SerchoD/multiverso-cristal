@@ -95,7 +95,11 @@ const FaQAccordion = ({ FAQ, className }) => {
 	}, [filteredFAQList]);
 
 	return (
-		<div className='flex flex-col justify-start items-center w-full mt-5 pb-6'>
+		<div
+			className={`flex flex-col justify-start items-center w-full mt-0 ${
+				showAccordion ? 'pb-6' : 'pb-0'
+			}`}
+		>
 			<Button
 				text='Preguntas Frecuentes'
 				textType={2}

@@ -25,7 +25,6 @@ const useStyles = () => {
 		active_route: `text-amber-200 scale-[105%] text-shadow-6`,
 
 		mobile_topbar: `isDesktop:hidden
-				fixed
 				w-full h-full
 				flex flex-row justify-center items-center`,
 		center_text_container: `absolute center`,

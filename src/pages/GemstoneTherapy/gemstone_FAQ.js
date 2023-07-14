@@ -63,8 +63,8 @@ export const GEMSTONE_FAQ = [
 		question: '¿Duele la Gemoterapia?',
 		answer: [
 			'¡No! El efecto de bienestar, en la mayoría de los casos es inmediato.',
-			'En casos donde los conflictos de los cuerpos energéticos se desencadenaron en síntomas físicos, puede ocurrir que, al devolver la armonía a al cuerpo energético, el cuerpo físico se disponga a sanar, o volver a su estado de funcionamiento normal.',
-			'A veces, este proceso de "Sanación Biológica", puede estar acompañado de molestias, dependiendo el Programa Biológico que se esté trancitando.',
+			'En casos donde los conflictos de los cuerpos energéticos se desencadenaron en síntomas físicos, puede ocurrir que, al devolver la armonía al cuerpo energético, el cuerpo físico se disponga a sanar, o volver a su estado de funcionamiento normal.',
+			'A veces, este proceso de "Reparación Biológica", puede estar acompañado de molestias, dependiendo el Programa Biológico que se esté trancitando.',
 			'Por ejemplo, en algunos casos donde se lleva tiempo con el cuerpo energético en conflicto o disonancia, el cuerpo Biológico se Adapta para Sobrevivir. Al disolver el conflicto energético/emocional, el cuerpo Biológico se dispone a sanar, a veces acompañado por Fiebre, Vómitos, u otros síntomas de "Limpieza".',
 		],
 	},
@@ -87,4 +87,40 @@ export const GEMSTONE_FAQ = [
 			'También puedes tomarlo "cosméticamente", en lugar de un día de Spá, ¡un día de baño de cristales, para revigorizar el cuerpo energético!',
 		],
 	},
+	{
+		question: '¿Cómo es una sesión presencial?',
+		answer: [
+			'Las sesiones presenciales, son en la ciudad de Mar Del Plata, Argentina.',
+			'Se reserva el turno previamente, donde se acuerda día y horario.',
+			'La sesión dura aproximadamente una hora.',
+			'Primero se conversa con el consultante sobre cual es el motivo por el que quiere la sesión de Gemoterapia, el Por qué, el Para qué, y las expectativas.',
+			'Luego se recuesta en la camilla, con la compañía de una música relajante, y se colocan los cristales sobre los Chakras principales. (No es necesario quitarse la ropa para la práctica de la Gemoterapia)',
+			'Con la ayuda de un Péndulo de Cristal (Radiestesia), se observan los Chakras y dónde se hallan el o los bloqueos.',
+			'Luego con diferentes técnicas energéticas y el poder de los cristales, se ayuda a fluir, remover, desbloquear, sanar, disolver, o lo que cada situación requiera, el bloqueo o disonancia que pueda existir.',
+			'Después de atender los bloqueos específicos, se realiza la alineación y activación de los Chakras.',
+			'Al finalizar el tratamiento energético, se conversa sobre la experiencia, qué sintió el consultante y cosas que se puedan haber percibido durante la sesión que podrían ser relevantes para el proceso por el que se esté transitando.',
+		],
+	},
+	{
+		question: '¿Cómo es una sesión a distancia?',
+		answer: [
+			'Se reserva el turno previamente, donde se acuerda día y horario.',
+			'La sesión dura aproximadamente una hora.',
+			'Primero se realiza una pequeña video-llamada, para conocernos, y contactar con la energía del consultante.',
+			'Se conversa con el consultante sobre cuál es el motivo por el que quiere la sesión de Gemoterapia, el Por qué, el Para qué, y las expectativas.',
+			'Luego se comienza el tratamiento, para esto, se invita al consultante a estar en un momento y espacio en que pueda estar de manera tranquila y relajada, y si prefiere hacer una meditación y recostarse, es ideal.',
+			'Sobre un paño, se colocan siete cristales, uno para cada Chakra, y se los vincula energéticamente con el consultante',
+			'Con la ayuda de un Péndulo de Cristal (Radiestesia), se observan los Chakras (a través de los cristales previamente vinculados) y dónde se hallan el o los bloqueos energéticos del consultante.',
+			'Luego con diferentes técnicas energéticas y el poder de los cristales, se ayuda a fluir, remover, desbloquear, sanar, disolver, o lo que cada situación requiera, el bloqueo o disonancia que pueda existir.',
+			'Después de atender los bloqueos específicos, se realiza la alineación y activación de los Chakras.',
+			'Al finalizar el tratamiento energético, se puede hacer otra pequeña video-llamada para conversar sobre la experiencia, qué sintió el consultante y cosas que se puedan haber percibido durante la sesión que podrían ser relevantes para el proceso por el que se esté transitando.',
+			'A veces, como luego de la sesión se permanece en un agradable estado de relajación, se prefiere no realizar inmediatamente esa video-llamada, se le hace en forma de mensajes de audio una devolución al consultante de cosas que se puedan haber percibido durante la sesión, que puedan resultarle relevante para el proceso por el que esté transitando.',
+		],
+	},
 ];
+
+// ¿Cómo es una sesión a distancia?
+
+// Se pacta día y horario en el que realizan una pequeña video llamada, para conocer y conectar con la energía del consultante, charlamos sobre que le anda pasando y que es lo que espera de la sesión.
+// Luego, sobre un paño, procedemos a colocar los cristales, en forma vertical, enviando energía a los chakras principales de la persona.
+// Con la ayuda de un péndulo vemos en donde se encuentra el bloqueo, y con la técnica de Gemoterapia, procedemos a desbloquear y armonizar los vórtices de energía del consultante.
