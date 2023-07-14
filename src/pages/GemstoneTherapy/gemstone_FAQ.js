@@ -73,7 +73,7 @@ export const GEMSTONE_FAQ = [
 		answer: [
 			'Eso depende totalmente de vos.',
 			'Con la Gemoterapia se ayuda a restablecer la armonía al cuerpo energético. Si esta desarmonía fue por una causa específica, probablemente con una sola encuentres tu centro nuevamente.',
-			'Hay que tener en cuenta que si se lleva un estilo de vida donde uno interactua con "Malas Energías" frecuentemente; Como en el trabajo, en contexto doméstico, conflictos sociales en general, o pensamientos novicos, puede ser que, por más sesiones de cualquier cosa que uno haga, vuelva el cuerpo energético a desarmonizarce.',
+			'Hay que tener en cuenta que si se lleva un estilo de vida donde uno interactua con "Malas Energías" frecuentemente; Como en el trabajo, en contexto doméstico, conflictos sociales en general, o pensamientos nocivos, puede ser que, por más sesiones de cualquier cosa que uno haga, vuelva el cuerpo energético a desarmonizarce.',
 			'Hay quienes podrán disfrutar de las sanaciones con cristales periódicamente, o quizá varias sesiones para acompañar un proceso de sanación de una larga dolencia.',
 			'Pero una sesión de Gemoterapia no es un "Escudo", para evadir malos hábitos, interferencias externas, pensamientos nocivos, agresiones energéticas, etc.',
 		],
