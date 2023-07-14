@@ -158,7 +158,7 @@ const FormToEmail = () => {
 
 				<div className={s?.input_container}>
 					<label className={s?.label} htmlFor='country'>
-						Pais:
+						¿Dónde estás?
 					</label>
 					<select
 						id='country'
