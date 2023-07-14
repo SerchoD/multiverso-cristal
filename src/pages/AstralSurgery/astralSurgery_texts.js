@@ -1,0 +1,7 @@
+export const ASTRAL_SURGERY_TEXTS = {
+	1: `La <b>Cirugía Astral</b> es una técnica de sanación energética que se puede considerar más precisa e intensa (como una cirugía), donde se usa como instrumento de intervención el poder y la precisión de un <b>Cuarzo Cristalino</b>, y el poder de los <b>Cinco Elementos</b> (Aire, Fuego, Agua, Tierra, Eter). Se busca dónde está el bloqueo energético en concreto, esté asociado directamente al cuerpo físico o a los cuerpos sutiles, luego se procede a través de un proceso de técnicas concretas, visualización y canalización espontánea de cada circunstancia, a remover ese bloqueo energético que pueda estar ocasionando un mal mayor. A veces se remueven conflictos emocionales, trabas mentales, parásitos etéricos, o diferentes tipos de fenómenos localizados que incurran en la causa de diferentes dolencias.
+   </br></br>
+   Esta práctica requiere para el <b>Sanador</b> adentrarse en una meditación y/o canalización muy profunda que requiere una gran <b>concentración y templanza energética</b>. Durante la intervención interactua con el campo astral, a través de sensaciones y visualizaciones que le permiten detectar el problema y removerlo.
+   </br></br>
+   Luego del proceso de <b>"Extirpación"</b>, se procede a hacer un cierre de la <b>"Incisión"</b> que se le causa al cuerpo energético para poder quitar aquello que ya no es necesario, y se finaliza con una alineación y armonización de los Chakras, y una limpieza del campo aurico del paciente, para una recuperación pacífica y amena.`,
+};

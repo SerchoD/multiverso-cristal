@@ -17,7 +17,7 @@ export const CARD_DATA = [
 	{
 		title: 'Cirugía Astral',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null',
+			'La Cirugía Astral es una técnica de sanación energética que se puede considerar más precisa e intensa (como una cirugía), donde se usa como instrumento de intervención el poder y la precisión de un Cuarzo Cristalino. Se busca dónde está el bloqueo energético en concreto, esté asociado directamente al cuerpo físico o energético, luego se procede a través de un proceso de técnicas concretas, visualización y canalización espontánea de cada circunstancia, a remover ese elemento energético que pueda estar ocasionando un mal mayor. A veces se remueven conflictos emocionales, trabas mentales, parásitos etéricos, o diferentes tipos de fenómenos localizados que incurran en la generación de diferentes dolencias.',
 		image: 'bg-img-3',
 		route: PATHS.ASTRAL_SURGERY.route,
 	},
