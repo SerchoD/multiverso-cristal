@@ -3,9 +3,9 @@
 	"name": "Multiverso Cristal",
 	"icons": [
 		{
-			"src": "MC_logo_2.ico",
+			"src": "MC_logo_2.png",
 			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "image/x-icon"
+			"type": "image/png"
 		},
 		{
 			"src": "MC_logo_2.png",
