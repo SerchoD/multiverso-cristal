@@ -1,13 +1,13 @@
 import React from 'react';
 
-const IconCrystal1 = () => {
+const IconCrystal1 = ({ size = '60px' }) => {
 	return (
 		<svg
 			className='p-3'
 			fill='#ffff'
 			version='1.1'
-			width='60px'
-			height='60px'
+			width={size}
+			height={size}
 			viewBox='0 0 256 256'
 			enableBackground='new 0 0 256 256'
 			filter='drop-shadow(0px 0px 8px rgb(250 250 0 / .7))'

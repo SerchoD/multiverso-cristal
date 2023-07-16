@@ -5,6 +5,7 @@ import { shuffleArray } from '../../utils/utils';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import useStyles from './useStyles';
 import { CARD_DATA } from './homeCardsData';
+import IconCrystal1 from '../../assets/icons/IconCrystal1';
 
 const ELEMENTS = shuffleArray(CARD_DATA);
 
@@ -21,8 +22,16 @@ const Home = () => {
 	return (
 		<PageContainer showTopBar={false}>
 			<div className={s.title_container}>
-				<h1>Multiverso</h1>
-				<h1>Cristal</h1>
+				<div className={s?.logo_container}>
+					<IconCrystal1 size='150px' />
+				</div>
+				<div
+					className='flex flex-col items-center justify-center p-2'
+					style={{ filter: 'drop-shadow(0px 0px 8px rgba(250, 250, 0, 0.5))' }}
+				>
+					<h1 className='px-5'>Multiverso</h1>
+					<h1 className='px-5'>Cristal</h1>
+				</div>
 			</div>
 			{ELEMENTS.map((cardData, index) => {
 				return (
