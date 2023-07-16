@@ -3,5 +3,5 @@ export const ASTRAL_SURGERY_TEXTS = {
    </br></br>
    Esta práctica requiere para el <b>Sanador</b> adentrarse en una meditación y/o canalización muy profunda que requiere una gran <b>concentración y templanza energética</b>. Durante la intervención interactua con el campo astral, a través de sensaciones y visualizaciones que le permiten detectar el problema y removerlo.
    </br></br>
-   Luego del proceso de <b>"Extirpación"</b>, se procede a hacer un cierre de la <b>"Incisión"</b> que se le causa al cuerpo energético para poder quitar aquello que ya no es necesario, y se finaliza con una alineación y armonización de los Chakras, y una limpieza del campo aurico del paciente, para una recuperación pacífica y amena.`,
+   Luego del proceso de <b>Extracción</b>, se procede a hacer un cierre de la <b>"Incisión"</b> que se le causa al cuerpo energético para poder quitar aquello que ya no es necesario, y se finaliza con una alineación y armonización de los Chakras, y una limpieza del campo aurico del Consultante, para una recuperación pacífica y amena.`,
 };

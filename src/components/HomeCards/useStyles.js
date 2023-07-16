@@ -1,7 +1,7 @@
 const useStyles = ({ card_img, index, length }) => {
 	const styles = {
 		card_container: `shrink-0 flex flex-row isMobile:flex-col isMobile:items-center w-[75%] isMobile:w-[90%]
-				h-[180px]  mt-10 cursor-pointer 
+				h-[180px] mt-[40px] cursor-pointer 
 				${index === 0 && 'mt-24'} 
 				${index === length && 'mb-24'} 
 				scale-[98%] hover:scale-100 

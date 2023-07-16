@@ -3,5 +3,5 @@ export const GEMOSTONE_TEXTS = {
    </br></br>
    Cada cristal tiene sus características, por su <b>naturaleza vibratoria, color y estructura cristalina</b>. Siendo que diferentes cristales, en diferentes Chakras, pueden contribuir de formas particulares en el proceso que cada quién necesite para <b>sanar o armonizarse</b>.
    </br></br>
-   Esta técnica se puede hacer de manera <b>presencial</b> o bien, a <b>distancia</b>, obteniendo los mismos resultados, ya que funciona incidiendo directamente en los cuerpos sutiles, conectados entre el Terapista y el Paciente a traves del campo del <b>Eter</b>, dirigiendo la energía de los cristales a los vórtices principales de energía del individuo. `,
+   Esta técnica se puede hacer de manera <b>presencial</b> o bien, a <b>distancia</b>, obteniendo los mismos resultados, ya que funciona incidiendo directamente en los cuerpos sutiles, conectados entre el Terapista y el Consultante a traves del campo del <b>Eter</b>, dirigiendo la energía de los cristales a los vórtices principales de energía del individuo. `,
 };
