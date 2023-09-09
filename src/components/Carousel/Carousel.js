@@ -8,7 +8,7 @@ const Carousel = ({ className, images }) => {
 	return (
 		<div className={`isDesktop:w-full isMobile:w-screen h-auto ${className}`}>
 			<Slider
-				dots
+				dots={false}
 				arrows={false}
 				arrowsBlock={true}
 				centerMode
@@ -27,7 +27,7 @@ const Carousel = ({ className, images }) => {
 							key={image?.id}
 							src={image?.img}
 							className={`w-[500px] isMobile:w-screen h-[400px] rounded-3xl object-cover`}
-							alt={'Imagen pendiente...'}
+							alt={'Cargando...'}
 						/>
 					);
 				})}

@@ -5,6 +5,7 @@ import MainLayout from '../layouts/MainLayout/MainLayout';
 import Home from '../pages/Home/Home';
 import GemstoneTherapy from '../pages/GemstoneTherapy/GemstoneTherapy';
 import AstralSurgery from '../pages/AstralSurgery/AstralSurgery';
+import Tarot from '../pages/Tarot/Tarot';
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -16,6 +17,7 @@ const AnimatedRoutes = () => {
 
 					<Route path={PATHS?.GEMSTONE_THERAPY?.route} element={<GemstoneTherapy />} />
 					<Route path={PATHS?.ASTRAL_SURGERY?.route} element={<AstralSurgery />} />
+					<Route path={PATHS?.TAROT?.route} element={<Tarot />} />
 				</Route>
 
 				<Route path='*' element={<Navigate to={PATHS?.BASE_URL?.route} />} />
