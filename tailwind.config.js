@@ -15,6 +15,7 @@ module.exports = {
 				'img-3': "url('../src/assets/images/home/cirugia-astral-1.jpg')",
 				'img-4': "url('../src/assets/images/home/old-book-1.jpg')",
 				'img-5': "url('../src/assets/images/home/meditation-1.jpg')",
+				'img-6': "url('../src/assets/images/home/tarot-1.jpg')",
 			},
 			screens: {
 				// Styles are DESKTOP FIRST
